@@ -9,6 +9,9 @@ import java.util.stream.IntStream;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import com.google.gson.Gson;
+import com.google.inject.Inject;
+
 import constants.HTTPCodeConstants;
 import constants.TestConstants;
 import constants.EndpointConstants;
@@ -16,11 +19,15 @@ import io.cucumber.java8.En;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import models.PetResponse;
+import models.UpdateUserRequest;
 import utils.FileUtils;
 import utils.RestSingletonUtils;
 
 public class Petstore_UserOperations implements En {
 
+	@Inject
+	UpdateUserRequest updateUserRequest;
 	FileUtils file = new FileUtils();
 	String updatedUserName;
 	RestSingletonUtils getRest;
@@ -30,6 +37,7 @@ public class Petstore_UserOperations implements En {
 
 		RequestSpecification request = RestSingletonUtils.getRestInstance();
 		request.contentType("application/json");
+		Gson gson = new Gson();
 
 		Given("I Create single {string}", (String createUserFilePath) -> {
 			System.out.println("I Create multiple {string}");
@@ -68,10 +76,16 @@ public class Petstore_UserOperations implements En {
 			System.out.println(">>>>>>>>>>>>> Starting Update User");
 
 			userToBeUpdated = new JSONObject(file.read(userDetailsFilePath)).getString("username");
+
+			updateUserRequest = gson.fromJson(file.read(userDetailsFilePath), UpdateUserRequest.class);
+
+			System.out.println("value username from Pojo >>>> " + updateUserRequest.getUsername());
+
 			// request.body(file.read(userDetailsFilePath));
 			System.out.println("Put call > " + EndpointConstants.HOST + EndpointConstants.PUT_UPDATEUSERS_ENDPOINT
 					+ userToBeUpdated);
 			Response response = request.body(file.read(userDetailsFilePath))
+
 					.put(EndpointConstants.PUT_UPDATEUSERS_ENDPOINT + userToBeUpdated);
 
 			updatedUserName = new JSONObject(file.read(userDetailsFilePath)).getString("username");
@@ -96,11 +110,14 @@ public class Petstore_UserOperations implements En {
 
 			// assertEquals(response.getStatusCode(), HTTPCodeConstants.STATUS_CODE_OK);
 
-			System.out.println(">>>>>>>>>>>>> Starting Delete User");
-			System.out.println("Delete call > " + EndpointConstants.HOST + EndpointConstants.DELETE_USERS_ENDPOINT
-					+ updatedUserName);
-			response = request.get(EndpointConstants.DELETE_USERS_ENDPOINT + updatedUserName);
-			System.out.println("response of deleteUsers" + response.getBody().asString());
+			/*
+			 * System.out.println(">>>>>>>>>>>>> Starting Delete User");
+			 * System.out.println("Delete call > " + EndpointConstants.HOST +
+			 * EndpointConstants.DELETE_USERS_ENDPOINT + updatedUserName); response =
+			 * request.get(EndpointConstants.DELETE_USERS_ENDPOINT + updatedUserName);
+			 * System.out.println("response of deleteUsers" +
+			 * response.getBody().asString());
+			 */
 		});
 
 		Then("all users can be fetched successfully", () -> {
@@ -114,6 +131,26 @@ public class Petstore_UserOperations implements En {
 				assertEquals(response.getStatusCode(), HTTPCodeConstants.STATUS_CODE_OK);
 			}
 		});
+
+		/*
+		 * After("@cleanUpupdatedUsers", () -> {
+		 * System.out.println(">>>>>>>>>>>>> Starting Delete User");
+		 * System.out.println("Delete call > " + EndpointConstants.HOST +
+		 * EndpointConstants.DELETE_USERS_ENDPOINT + updatedUserName); Response response
+		 * = request.get(EndpointConstants.DELETE_USERS_ENDPOINT + updatedUserName);
+		 * System.out.println("response of deleteUsers" +
+		 * response.getBody().asString()); });
+		 */
+
+		/*
+		 * After("@cleanUpMultipleUsers", () -> { for (String userName :
+		 * multipleUsersCreated) { Response response =
+		 * request.get(EndpointConstants.DELETE_USERS_ENDPOINT + userName);
+		 * System.out.println("status code is " + response.getStatusCode());
+		 * assertEquals(response.getStatusCode(), HTTPCodeConstants.STATUS_CODE_OK); }
+		 * });
+		 */
+
 	}
 
 	public List<String> getValuesForGivenKey(String jsonArrayStr, String key) {
