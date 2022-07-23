@@ -1,0 +1,16 @@
+{
+	"id": 0,
+	"category": {
+		"id": 0,
+		"name": "string"
+	},
+	"name": "SecondTrial1",
+	"photoUrls": [
+		"string"
+	],
+	"tags": [{
+		"id": 0,
+		"name": "string"
+	}],
+	"status": "sold"
+}

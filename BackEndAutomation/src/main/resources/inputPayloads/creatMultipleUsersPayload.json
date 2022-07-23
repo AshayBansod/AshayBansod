@@ -1,0 +1,21 @@
+[ {
+  "id" : 2,
+  "username" : "Trials3",
+  "firstName" : "check5",
+  "lastName" : "check5",
+  "email" : "check5",
+  "password" : "check5",
+  "phone" : "1234",
+  "userStatus" : 0
+},
+{
+	"id": 3,
+	"username": "Trials5",
+	"firstName": "check6",
+	"lastName": "check6",
+	"email": "check6",
+	"password": "check6",
+	"phone": "1234",
+	"userStatus": 0
+}
+ ]
