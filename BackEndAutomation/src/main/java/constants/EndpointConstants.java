@@ -12,4 +12,5 @@ public class EndpointConstants {
 	public static final String PUT_UPDATEPETS_ENDPOINT = "/pet";
 	public static final String GET_PETSBYSTATUS_ENDPOINT = "/pet/findByStatus";
 	public static final String GET_PETSBYID_ENDPOINT = "/pet/";
+	public static final String DELETE_PETSBYID_ENDPOINT = "/pet/";
 }

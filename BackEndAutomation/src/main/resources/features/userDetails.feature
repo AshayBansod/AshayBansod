@@ -2,10 +2,10 @@
 
 Feature: User Operations
   I want to test user operations
-  
+
+  @Sanity
   @cleanUpupdatedUsers
-  @sanity
-  Scenario Outline: Verification_of_user_CRUD_operations
+  Scenario Outline: Verification of user CRUD operations
     Given I Create single <user>
     When I update <user> with <userDetails>
     Then I should get updated user data
@@ -14,8 +14,8 @@ Feature: User Operations
       | user  																	|     user      |              userDetails 					   	 |   
       | "/inputPayloads/creatUserPayload.json"  |   "Trials1"   | "/inputPayloads/updateUserPayload.json"|
 
+  @Sanity
   @cleanUpMultipleUsers
-  @sanity
   Scenario Outline: Verification of mutliple user Create operations
     When I Create multiple <users>
     Then all users can be fetched successfully
