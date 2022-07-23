@@ -3,7 +3,7 @@
 Feature: Pet operations
   I want to use check working of pet operations
 
-  @sanity1
+  @pet
   Scenario Outline: Verification of user CRUD operations
     Given I Create <pets>
     When I update <Details> of pets

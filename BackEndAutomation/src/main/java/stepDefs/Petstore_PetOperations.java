@@ -4,7 +4,10 @@ import static org.junit.Assert.assertEquals;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import com.google.gson.Gson;
 
 import constants.HTTPCodeConstants;
 import constants.TestConstants;
@@ -29,38 +32,45 @@ public class Petstore_PetOperations implements En {
 
 		RequestSpecification request = RestSingletonUtils.getRestInstance();
 		request.contentType("application/json");
+		Gson gson = new Gson();
 
 		Given("I Create {string}", (String createPetFilePath) -> {
-			System.out.println(">>>>>>>>>>>>> Starting create Pet");
+			//System.out.println(">>>>>>>>>>>>> Starting create Pet");
+			LOGGER.log(Level.INFO, "Creating pet record");
 			request.body(file.read(createPetFilePath));
 
 			Response response = request.post(EndpointConstants.POST_CREATEPETS_ENDPOINT);
-			System.out.println("response of createPet" + response.getBody().asString());
+			//System.out.println("response of createPet" + response.getBody().asString());
 
-			petResponse = response.getBody().as(PetResponse.class);
+			//petResponse = response.getBody().as(PetResponse.class);
 
-			System.out.println("pet id is " + petResponse.id);
+			petResponse = gson.fromJson(response.getBody().asString(),PetResponse.class);
+			
+			LOGGER.log(Level.INFO, "Pet is created with pet id - " + petResponse.getId());
+			//System.out.println("pet id is " + petResponse.getId());
 
 			assertEquals(response.getStatusCode(), HTTPCodeConstants.STATUS_CODE_OK);
 
 		});
 
 		When("I update {string} of pets", (String petDetailsForUpdate) -> {
-			System.out.println(">>>>>>>>>>>>> Starting update Pet");
+			//System.out.println(">>>>>>>>>>>>> Starting update Pet");
+			LOGGER.log(Level.INFO, "Starting to update pet");
 			request.body(file.read(petDetailsForUpdate));
 			Response response = request.put(EndpointConstants.PUT_UPDATEPETS_ENDPOINT);
-			System.out.println("response of updatePet" + response.getBody().asString());
+			//System.out.println("response of updatePet" + response.getBody().asString());
 			petResponse = response.getBody().as(PetResponse.class);
-			System.out.println("pet id after update is " + petResponse.id);
+			//System.out.println("pet id after update is " + petResponse.id);
 			assertEquals(response.getStatusCode(), HTTPCodeConstants.STATUS_CODE_OK);
 		});
 
 		Then("I should get updated pet data by {string}", (String petStatus) -> {
-			System.out.println(">>>>>>>>>>>>> Starting get pet by status");
+			//System.out.println(">>>>>>>>>>>>> Starting get pet by status");
+			LOGGER.log(Level.INFO, "Fetching all pets with status - " + petStatus + " and verifying if created/updated pet is in fetched list");
 			Response response = request.queryParam("status", petStatus)
 					.get(EndpointConstants.GET_PETSBYSTATUS_ENDPOINT);
 
-			System.out.println();
+
 
 			assertEquals(ifContainsLongValue(response, "id", petResponse.id), TestConstants.BOOLEAN_TRUE);
 			/*

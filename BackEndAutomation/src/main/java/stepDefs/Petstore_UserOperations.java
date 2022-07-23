@@ -45,13 +45,14 @@ public class Petstore_UserOperations implements En {
 		Given("I Create single {string}", (String createUserFilePath) -> {
 			// System.out.println("I Create multiple {string}");
 
-			String bodystr = file.read(createUserFilePath);
+			String bodyStr = file.read(createUserFilePath);
 
-			request.body(bodystr);
+			request.body(bodyStr);
 
 			// System.out.println(EndpointConstants.HOST +
 			// EndpointConstants.POST_CREATEUSERS_ENDPOINT);
 
+			LOGGER.log(Level.INFO, "Creating single user with following details " + bodyStr);
 			Response response = request.post(EndpointConstants.POST_CREATEUSERS_ENDPOINT);
 			// System.out.println("response of createUsers" +
 			// response.getBody().asString());
@@ -69,7 +70,7 @@ public class Petstore_UserOperations implements En {
 
 			multipleUsersCreated = getValuesForGivenKey(bodystr, "username");
 
-			LOGGER.log(Level.INFO, "Multiple users getting created with username are " + multipleUsersCreated);
+			LOGGER.log(Level.INFO, "Creating following multiple users " + multipleUsersCreated);
 
 			// System.out.println(EndpointConstants.HOST +
 			// EndpointConstants.POST_CREATEUSERS_ENDPOINT);
@@ -84,6 +85,8 @@ public class Petstore_UserOperations implements En {
 		When("I update {string} with {string}", (String userToBeUpdated, String userDetailsFilePath) -> {
 			// System.out.println(">>>>>>>>>>>>> Starting Update User");
 
+			LOGGER.log(Level.INFO, "Updating user " + userToBeUpdated);
+			
 			userToBeUpdated = new JSONObject(file.read(userDetailsFilePath)).getString("username");
 
 			updateUserRequest = gson.fromJson(file.read(userDetailsFilePath), UpdateUserRequest.class);
@@ -103,8 +106,6 @@ public class Petstore_UserOperations implements En {
 
 			LOGGER.log(Level.INFO, "updated user name is " + updatedUserName);
 			//System.out.println(updatedUserName);
-
-			// store updated user name in context to be used by next steps
 
 			System.out.println("response of updateUsers" + response.getBody().asString());
 
@@ -135,12 +136,14 @@ public class Petstore_UserOperations implements En {
 
 		Then("all users can be fetched successfully", () -> {
 
+			LOGGER.log(Level.INFO, "Verifying that multiple users are created in system");
+			
 			Response response;
 
 			for (String userName : multipleUsersCreated) {
-				System.out.println(userName);
+				//System.out.println(userName);
 				response = request.get(EndpointConstants.GET_USERS_ENDPOINT + userName);
-				System.out.println("status code is " + response.getStatusCode());
+				//System.out.println("status code is " + response.getStatusCode());
 				assertEquals(response.getStatusCode(), HTTPCodeConstants.STATUS_CODE_OK);
 
 			}
