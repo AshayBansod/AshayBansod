@@ -15,24 +15,27 @@ public class cleanUpUtil implements En {
 	@Inject
 	UpdateUserRequest updateUserRequest;
 
-	@Inject
 	public cleanUpUtil() {
 
 		RequestSpecification request = RestSingletonUtils.getRestInstance();
 		request.contentType("application/json");
 
 
-		After("@cleanUpupdatedUsers", () -> {
-
-			System.out.println(">>>>>>>>>>>>> Starting Delete User");
-
-			System.out.println("value from Pojo >>>> " + updateUserRequest.getUsername());
-
-			System.out.println("Delete call > " + EndpointConstants.HOST + EndpointConstants.DELETE_USERS_ENDPOINT
-					+ updateUserRequest.getUsername());
-			Response response = request.get(EndpointConstants.DELETE_USERS_ENDPOINT + updateUserRequest.getUsername());
-			System.out.println("response of deleteUsers" + response.getBody().asString());
-		});
+		/*
+		 * After("@cleanUpupdatedUsers", () -> {
+		 * 
+		 * System.out.println(">>>>>>>>>>>>> Starting Delete User");
+		 * 
+		 * System.out.println("value from Pojo >>>> " +
+		 * updateUserRequest.getUsername());
+		 * 
+		 * System.out.println("Delete call > " + EndpointConstants.HOST +
+		 * EndpointConstants.DELETE_USERS_ENDPOINT + updateUserRequest.getUsername());
+		 * Response response = request.get(EndpointConstants.DELETE_USERS_ENDPOINT +
+		 * updateUserRequest.getUsername());
+		 * System.out.println("response of deleteUsers" +
+		 * response.getBody().asString()); });
+		 */
 
 		/*
 		 * After("@cleanUpMultipleUsers", () -> { for (String userName :

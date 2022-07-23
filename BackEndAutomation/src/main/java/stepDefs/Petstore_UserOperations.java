@@ -4,6 +4,8 @@ import static org.junit.Assert.assertEquals;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import org.json.JSONArray;
@@ -32,6 +34,7 @@ public class Petstore_UserOperations implements En {
 	String updatedUserName;
 	RestSingletonUtils getRest;
 	List<String> multipleUsersCreated;
+	private final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
 	public Petstore_UserOperations() throws IOException {
 
@@ -40,16 +43,18 @@ public class Petstore_UserOperations implements En {
 		Gson gson = new Gson();
 
 		Given("I Create single {string}", (String createUserFilePath) -> {
-			System.out.println("I Create multiple {string}");
+			// System.out.println("I Create multiple {string}");
 
 			String bodystr = file.read(createUserFilePath);
 
 			request.body(bodystr);
 
-			System.out.println(EndpointConstants.HOST + EndpointConstants.POST_CREATEUSERS_ENDPOINT);
+			// System.out.println(EndpointConstants.HOST +
+			// EndpointConstants.POST_CREATEUSERS_ENDPOINT);
 
 			Response response = request.post(EndpointConstants.POST_CREATEUSERS_ENDPOINT);
-			System.out.println("response of createUsers" + response.getBody().asString());
+			// System.out.println("response of createUsers" +
+			// response.getBody().asString());
 
 			assertEquals(response.getStatusCode(), HTTPCodeConstants.STATUS_CODE_OK);
 
@@ -60,37 +65,44 @@ public class Petstore_UserOperations implements En {
 
 			request.body(bodystr);
 
-			System.out.println(getValuesForGivenKey(bodystr, "username"));
+			// System.out.println(getValuesForGivenKey(bodystr, "username"));
 
 			multipleUsersCreated = getValuesForGivenKey(bodystr, "username");
 
-			System.out.println(EndpointConstants.HOST + EndpointConstants.POST_CREATEUSERS_ENDPOINT);
+			LOGGER.log(Level.INFO, "Multiple users getting created with username are " + multipleUsersCreated);
+
+			// System.out.println(EndpointConstants.HOST +
+			// EndpointConstants.POST_CREATEUSERS_ENDPOINT);
 
 			Response response = request.post(EndpointConstants.POST_CREATEUSERS_ENDPOINT);
-			System.out.println("response of createUsers" + response.getBody().asString());
+			// System.out.println("response of createUsers" +
+			// response.getBody().asString());
 
 			assertEquals(response.getStatusCode(), HTTPCodeConstants.STATUS_CODE_OK);
 		});
 
 		When("I update {string} with {string}", (String userToBeUpdated, String userDetailsFilePath) -> {
-			System.out.println(">>>>>>>>>>>>> Starting Update User");
+			// System.out.println(">>>>>>>>>>>>> Starting Update User");
 
 			userToBeUpdated = new JSONObject(file.read(userDetailsFilePath)).getString("username");
 
 			updateUserRequest = gson.fromJson(file.read(userDetailsFilePath), UpdateUserRequest.class);
 
-			System.out.println("value username from Pojo >>>> " + updateUserRequest.getUsername());
+			// System.out.println("value username from Pojo >>>> " +
+			// updateUserRequest.getUsername());
 
 			// request.body(file.read(userDetailsFilePath));
-			System.out.println("Put call > " + EndpointConstants.HOST + EndpointConstants.PUT_UPDATEUSERS_ENDPOINT
-					+ userToBeUpdated);
+			// System.out.println("Put call > " + EndpointConstants.HOST +
+			// EndpointConstants.PUT_UPDATEUSERS_ENDPOINT
+			// + userToBeUpdated);
 			Response response = request.body(file.read(userDetailsFilePath))
 
 					.put(EndpointConstants.PUT_UPDATEUSERS_ENDPOINT + userToBeUpdated);
 
 			updatedUserName = new JSONObject(file.read(userDetailsFilePath)).getString("username");
 
-			System.out.println(updatedUserName);
+			LOGGER.log(Level.INFO, "updated user name is " + updatedUserName);
+			//System.out.println(updatedUserName);
 
 			// store updated user name in context to be used by next steps
 
@@ -101,14 +113,15 @@ public class Petstore_UserOperations implements En {
 
 		Then("I should get updated user data", () -> {
 
-			System.out.println(">>>>>>>>>>>>> Starting Get User");
-			System.out.println(
-					"Get call > " + EndpointConstants.HOST + EndpointConstants.GET_USERS_ENDPOINT + updatedUserName);
+			//System.out.println(">>>>>>>>>>>>> Starting Get User");
+			//System.out.println(
+			//		"Get call > " + EndpointConstants.HOST + EndpointConstants.GET_USERS_ENDPOINT + updatedUserName);
 
 			Response response = request.get(EndpointConstants.GET_USERS_ENDPOINT + updatedUserName);
-			System.out.println("response of getUsers" + response.getBody().asString());
+			//System.out.println("response of getUsers" + response.getBody().asString());
 
-			// assertEquals(response.getStatusCode(), HTTPCodeConstants.STATUS_CODE_OK);
+			LOGGER.log(Level.INFO, "User details after update are " + response.getBody().asString());
+			assertEquals(response.getStatusCode(), HTTPCodeConstants.STATUS_CODE_OK);
 
 			/*
 			 * System.out.println(">>>>>>>>>>>>> Starting Delete User");
@@ -129,27 +142,30 @@ public class Petstore_UserOperations implements En {
 				response = request.get(EndpointConstants.GET_USERS_ENDPOINT + userName);
 				System.out.println("status code is " + response.getStatusCode());
 				assertEquals(response.getStatusCode(), HTTPCodeConstants.STATUS_CODE_OK);
+
 			}
 		});
 
-		/*
-		 * After("@cleanUpupdatedUsers", () -> {
-		 * System.out.println(">>>>>>>>>>>>> Starting Delete User");
-		 * System.out.println("Delete call > " + EndpointConstants.HOST +
-		 * EndpointConstants.DELETE_USERS_ENDPOINT + updatedUserName); Response response
-		 * = request.get(EndpointConstants.DELETE_USERS_ENDPOINT + updatedUserName);
-		 * System.out.println("response of deleteUsers" +
-		 * response.getBody().asString()); });
-		 */
+		After("@cleanUpupdatedUsers", () -> {
+			LOGGER.log(Level.INFO,
+					"Test data clean-up for individual user created/updated " + updatedUserName + " has started");
+			//System.out.println("Delete call > " + EndpointConstants.HOST + EndpointConstants.DELETE_USERS_ENDPOINT
+			//		+ updatedUserName);
+			Response response = request.get(EndpointConstants.DELETE_USERS_ENDPOINT + updatedUserName);
+			//System.out.println("response of deleteUsers" + response.getBody().asString());
+			assertEquals(response.getStatusCode(), HTTPCodeConstants.STATUS_CODE_OK);
+		});
 
-		/*
-		 * After("@cleanUpMultipleUsers", () -> { for (String userName :
-		 * multipleUsersCreated) { Response response =
-		 * request.get(EndpointConstants.DELETE_USERS_ENDPOINT + userName);
-		 * System.out.println("status code is " + response.getStatusCode());
-		 * assertEquals(response.getStatusCode(), HTTPCodeConstants.STATUS_CODE_OK); }
-		 * });
-		 */
+		After("@cleanUpMultipleUsers", () -> {
+
+			LOGGER.log(Level.INFO, "Test data clean-up for multiple user created has started");
+			for (String userName : multipleUsersCreated) {
+				LOGGER.log(Level.INFO, "Deleting user with username- " + userName);
+				Response response = request.get(EndpointConstants.DELETE_USERS_ENDPOINT + userName);
+				//System.out.println("status code is " + response.getStatusCode());
+				assertEquals(response.getStatusCode(), HTTPCodeConstants.STATUS_CODE_OK);
+			}
+		});
 
 	}
 

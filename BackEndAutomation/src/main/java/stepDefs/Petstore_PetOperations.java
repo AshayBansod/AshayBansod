@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.logging.Logger;
 
 import constants.HTTPCodeConstants;
 import constants.TestConstants;
@@ -22,6 +23,7 @@ public class Petstore_PetOperations implements En {
 	FileUtils file = new FileUtils();
 	String createdPetId;
 	PetResponse petResponse;
+	private final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
 	public Petstore_PetOperations() throws IOException {
 
