@@ -19,12 +19,14 @@ import io.restassured.specification.RequestSpecification;
 import models.PetResponse;
 import utils.FileUtils;
 import utils.RestSingletonUtils;
+import utils.TestUtils;
 
 public class Petstore_PetOperations implements En {
 
 	FileUtils file = new FileUtils();
 	String createdPetId;
 	PetResponse petResponse;
+	TestUtils testUtils = new TestUtils();
 	private final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
 	public Petstore_PetOperations() throws IOException {
@@ -56,7 +58,7 @@ public class Petstore_PetOperations implements En {
 					+ " and verifying if created/updated pet is in fetched list");
 			Response response = request.queryParam("status", petStatus)
 					.get(EndpointConstants.GET_PETSBYSTATUS_ENDPOINT);
-			assertEquals(ifContainsLongValue(response, "id", petResponse.id), TestConstants.BOOLEAN_TRUE);
+			assertEquals(testUtils.ifContainsLongValue(response, "id", petResponse.id), TestConstants.BOOLEAN_TRUE);
 		});
 
 		After("@cleanUpPets", () -> {
@@ -66,10 +68,11 @@ public class Petstore_PetOperations implements En {
 		});
 	}
 
-	public boolean ifContainsLongValue(Response response, String key, long toBeSearched) {
-		JsonPath jsonPath = response.jsonPath();
-		List<Long> petIdByState = jsonPath.getList(key);
-		return petIdByState.contains(toBeSearched);
-	}
+	/*
+	 * public boolean ifContainsLongValue(Response response, String key, long
+	 * toBeSearched) { JsonPath jsonPath = response.jsonPath(); List<Long>
+	 * petIdByState = jsonPath.getList(key); return
+	 * petIdByState.contains(toBeSearched); }
+	 */
 
 }

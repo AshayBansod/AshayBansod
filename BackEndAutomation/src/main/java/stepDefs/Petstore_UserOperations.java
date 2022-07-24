@@ -15,16 +15,15 @@ import com.google.gson.Gson;
 import com.google.inject.Inject;
 
 import constants.HTTPCodeConstants;
-import constants.TestConstants;
+import constants.ResponseMsgRefConstants;
 import constants.EndpointConstants;
 import io.cucumber.java8.En;
-import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import models.PetResponse;
 import models.UpdateUserRequest;
 import utils.FileUtils;
 import utils.RestSingletonUtils;
+import utils.TestUtils;
 
 public class Petstore_UserOperations implements En {
 
@@ -34,6 +33,7 @@ public class Petstore_UserOperations implements En {
 	String updatedUserName;
 	RestSingletonUtils getRest;
 	List<String> multipleUsersCreated;
+	TestUtils testUtils = new TestUtils();
 	private final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
 	public Petstore_UserOperations() throws IOException {
@@ -46,14 +46,17 @@ public class Petstore_UserOperations implements En {
 			String bodyStr = file.read(createUserFilePath);
 			request.body(bodyStr);
 			LOGGER.log(Level.INFO, "Creating single user with following details " + bodyStr);
+
 			Response response = request.post(EndpointConstants.POST_CREATEUSERS_ENDPOINT);
+
 			assertEquals(response.getStatusCode(), HTTPCodeConstants.STATUS_CODE_OK);
+//			assertEquals(response.getBody().asString(), file.read(ResponseMsgRefConstants.CREATE_USER_SUCCESS_MESSAGE));
 		});
 
 		When("I Create multiple {string}", (String createMultipleUsersFilePath) -> {
 			String bodystr = file.read(createMultipleUsersFilePath);
 			request.body(bodystr);
-			multipleUsersCreated = getValuesForGivenKey(bodystr, "username");
+			multipleUsersCreated = testUtils.getValuesForGivenKey(bodystr, "username");
 			LOGGER.log(Level.INFO, "Creating following multiple users " + multipleUsersCreated);
 			Response response = request.post(EndpointConstants.POST_CREATEUSERS_ENDPOINT);
 			assertEquals(response.getStatusCode(), HTTPCodeConstants.STATUS_CODE_OK);
@@ -97,7 +100,6 @@ public class Petstore_UserOperations implements En {
 		});
 
 		After("@cleanUpMultipleUsers", () -> {
-
 			LOGGER.log(Level.INFO, "Test data clean-up for multiple user created has started");
 			for (String userName : multipleUsersCreated) {
 				LOGGER.log(Level.INFO, "Deleting user with username- " + userName);
@@ -105,11 +107,5 @@ public class Petstore_UserOperations implements En {
 				assertEquals(response.getStatusCode(), HTTPCodeConstants.STATUS_CODE_OK);
 			}
 		});
-	}
-
-	public List<String> getValuesForGivenKey(String jsonArrayStr, String key) {
-		JSONArray jsonArray = new JSONArray(jsonArrayStr);
-		return IntStream.range(0, jsonArray.length())
-				.mapToObj(index -> ((JSONObject) jsonArray.get(index)).optString(key)).collect(Collectors.toList());
 	}
 }
