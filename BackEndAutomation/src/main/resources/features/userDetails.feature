@@ -3,7 +3,7 @@
 Feature: User Operations
   I want to test user operations
 
-  @Sanity1
+  @Sanity
   @cleanUpupdatedUsers
   Scenario Outline: Verification of user CRUD operations
     Given I Create single <user>
@@ -14,7 +14,7 @@ Feature: User Operations
       | user  																	|     user      |              userDetails 					   	 |   
       | "/inputPayloads/creatUserPayload.json"  |   "Trials1"   | "/inputPayloads/updateUserPayload.json"|
 
-  @Sanity
+  @Sanity1
   @cleanUpMultipleUsers
   Scenario Outline: Verification of mutliple user Create operations
     When I Create multiple <users>
