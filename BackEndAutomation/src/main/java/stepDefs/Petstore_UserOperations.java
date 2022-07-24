@@ -20,6 +20,8 @@ import constants.EndpointConstants;
 import io.cucumber.java8.En;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import models.CreateUpdateUserResponse;
+import models.PetResponse;
 import models.UpdateUserRequest;
 import utils.FileUtils;
 import utils.RestSingletonUtils;
@@ -32,6 +34,7 @@ public class Petstore_UserOperations implements En {
 	FileUtils file = new FileUtils();
 	String updatedUserName;
 	RestSingletonUtils getRest;
+	CreateUpdateUserResponse userOperationResponse;
 	List<String> multipleUsersCreated;
 	TestUtils testUtils = new TestUtils();
 	private final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
@@ -43,22 +46,26 @@ public class Petstore_UserOperations implements En {
 		Gson gson = new Gson();
 
 		Given("I Create single {string}", (String createUserFilePath) -> {
-			String bodyStr = file.read(createUserFilePath);
-			request.body(bodyStr);
-			LOGGER.log(Level.INFO, "Creating single user with following details " + bodyStr);
 
+			LOGGER.log(Level.INFO, "Creating single user with following details " + file.read(createUserFilePath));
+
+			request.body(file.read(createUserFilePath));
 			Response response = request.post(EndpointConstants.POST_CREATEUSERS_ENDPOINT);
+			userOperationResponse = response.getBody().as(CreateUpdateUserResponse.class);
 
 			assertEquals(response.getStatusCode(), HTTPCodeConstants.STATUS_CODE_OK);
-//			assertEquals(response.getBody().asString(), file.read(ResponseMsgRefConstants.CREATE_USER_SUCCESS_MESSAGE));
+			assertEquals(userOperationResponse.getMessage(), ResponseMsgRefConstants.CREATE_USER_SUCCESS_MESSAGE);
+			assertEquals(userOperationResponse.getCode(), ResponseMsgRefConstants.CREATE_USER_SUCCESS_CODE);
 		});
 
 		When("I Create multiple {string}", (String createMultipleUsersFilePath) -> {
-			String bodystr = file.read(createMultipleUsersFilePath);
-			request.body(bodystr);
-			multipleUsersCreated = testUtils.getValuesForGivenKey(bodystr, "username");
+			request.body(file.read(createMultipleUsersFilePath));
+			multipleUsersCreated = testUtils.getValuesForGivenKey(file.read(createMultipleUsersFilePath), "username");
+			
 			LOGGER.log(Level.INFO, "Creating following multiple users " + multipleUsersCreated);
+			
 			Response response = request.post(EndpointConstants.POST_CREATEUSERS_ENDPOINT);
+			
 			assertEquals(response.getStatusCode(), HTTPCodeConstants.STATUS_CODE_OK);
 		});
 
@@ -68,10 +75,15 @@ public class Petstore_UserOperations implements En {
 			updateUserRequest = gson.fromJson(file.read(userDetailsFilePath), UpdateUserRequest.class);
 			Response response = request.body(file.read(userDetailsFilePath))
 					.put(EndpointConstants.PUT_UPDATEUSERS_ENDPOINT + userToBeUpdated);
+			
+			userOperationResponse = response.getBody().as(CreateUpdateUserResponse.class);
 			updatedUserName = new JSONObject(file.read(userDetailsFilePath)).getString("username");
+			
 			LOGGER.log(Level.INFO, "updated user name is " + updatedUserName);
-			System.out.println("response of updateUsers" + response.getBody().asString());
+			
 			assertEquals(response.getStatusCode(), HTTPCodeConstants.STATUS_CODE_OK);
+			assertEquals(userOperationResponse.getCode(), ResponseMsgRefConstants.CREATE_USER_SUCCESS_CODE);
+			assertEquals(userOperationResponse.getMessage(), String.valueOf(updateUserRequest.getId()));
 		});
 
 		Then("I should get updated user data", () -> {

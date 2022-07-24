@@ -3,7 +3,7 @@
 Feature: User Operations
   I want to test user operations
 
-  @Sanity
+  @Sanity1
   @cleanUpupdatedUsers
   Scenario Outline: Verification of user CRUD operations
     Given I Create single <user>
