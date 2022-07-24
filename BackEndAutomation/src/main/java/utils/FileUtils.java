@@ -11,12 +11,6 @@ public class FileUtils {
 	public String read(String filePath) throws IOException {
 
 		InputStream inStream = this.getClass().getResourceAsStream(filePath);
-		/*
-		 * File file = new File(filePath);
-		 * 
-		 * FileInputStream inStream = new FileInputStream(file);
-		 */
-		
 		BufferedReader br = new BufferedReader(new InputStreamReader(inStream));
 		StringBuilder stringBuilder = new StringBuilder();
 
