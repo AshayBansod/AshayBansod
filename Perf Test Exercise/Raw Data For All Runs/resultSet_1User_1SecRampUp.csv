@@ -1,0 +1,7 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1658501675011,1105,HTTP Request - Create Authors,200,OK,Thread Group 1-1,text,true,,262,290,1,1,https://fakerestapi.azurewebsites.net/api/v1/Authors,1105,0,932
+1658501676117,726,HTTP Request - Get all authors,200,OK,Thread Group 1-1,text,true,,47769,180,1,1,https://fakerestapi.azurewebsites.net/api/v1/Authors,141,0,0
+1658501676843,306,HTTP Request - Update Authors,200,OK,Thread Group 1-1,text,true,,273,303,1,1,https://fakerestapi.azurewebsites.net/api/v1/Authors/1,306,0,0
+1658501677150,135,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-1,text,true,,266,182,1,1,https://fakerestapi.azurewebsites.net/api/v1/Authors/1,134,0,0
+1658501677285,141,HTTP Request - Get By BookId,200,OK,Thread Group 1-1,text,true,,485,196,1,1,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/1,141,0,0
+1658501677427,175,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-1,text,true,,266,182,1,1,https://fakerestapi.azurewebsites.net/api/v1/Authors/1,154,0,0

@@ -1,0 +1,301 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1658502272685,902,HTTP Request - Create Authors,200,OK,Thread Group 1-6,text,true,,262,290,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors,902,0,754
+1658502272287,1436,HTTP Request - Create Authors,200,OK,Thread Group 1-4,text,true,,262,290,11,11,https://fakerestapi.azurewebsites.net/api/v1/Authors,1436,0,749
+1658502273284,873,HTTP Request - Create Authors,200,OK,Thread Group 1-9,text,true,,262,290,13,13,https://fakerestapi.azurewebsites.net/api/v1/Authors,873,0,568
+1658502273725,598,HTTP Request - Get all authors,200,OK,Thread Group 1-4,text,true,,47132,180,14,14,https://fakerestapi.azurewebsites.net/api/v1/Authors,416,0,0
+1658502274323,148,HTTP Request - Update Authors,200,OK,Thread Group 1-4,text,true,,273,303,14,14,https://fakerestapi.azurewebsites.net/api/v1/Authors/4,147,0,0
+1658502273483,1000,HTTP Request - Create Authors,200,OK,Thread Group 1-10,text,true,,266,294,15,15,https://fakerestapi.azurewebsites.net/api/v1/Authors,1000,0,841
+1658502274471,142,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-4,text,true,,266,182,15,15,https://fakerestapi.azurewebsites.net/api/v1/Authors/4,141,0,0
+1658502271689,2967,HTTP Request - Create Authors,200,OK,Thread Group 1-1,text,true,,262,290,15,15,https://fakerestapi.azurewebsites.net/api/v1/Authors,2967,0,2833
+1658502274613,143,HTTP Request - Get By BookId,200,OK,Thread Group 1-4,text,true,,497,196,16,16,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/4,143,0,0
+1658502272483,2281,HTTP Request - Create Authors,200,OK,Thread Group 1-5,text,true,,262,290,16,16,https://fakerestapi.azurewebsites.net/api/v1/Authors,2281,0,2139
+1658502274083,698,HTTP Request - Create Authors,200,OK,Thread Group 1-13,text,true,,266,294,16,16,https://fakerestapi.azurewebsites.net/api/v1/Authors,698,0,552
+1658502274484,300,HTTP Request - Get all authors,200,OK,Thread Group 1-10,text,true,,47470,180,16,16,https://fakerestapi.azurewebsites.net/api/v1/Authors,151,0,0
+1658502271889,2895,HTTP Request - Create Authors,200,OK,Thread Group 1-2,text,true,,262,290,16,16,https://fakerestapi.azurewebsites.net/api/v1/Authors,2895,0,2733
+1658502274158,713,HTTP Request - Get all authors,200,OK,Thread Group 1-9,text,true,,46419,180,16,16,https://fakerestapi.azurewebsites.net/api/v1/Authors,314,0,0
+1658502274757,154,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-4,text,true,,266,182,17,17,https://fakerestapi.azurewebsites.net/api/v1/Authors/4,154,0,0
+1658502274284,653,HTTP Request - Create Authors,200,OK,Thread Group 1-14,text,true,,266,294,16,16,https://fakerestapi.azurewebsites.net/api/v1/Authors,653,0,491
+1658502274785,181,HTTP Request - Update Authors,200,OK,Thread Group 1-10,text,true,,274,305,16,16,https://fakerestapi.azurewebsites.net/api/v1/Authors/10,180,0,0
+1658502274872,141,HTTP Request - Update Authors,200,OK,Thread Group 1-9,text,true,,273,303,16,16,https://fakerestapi.azurewebsites.net/api/v1/Authors/9,141,0,0
+1658502274484,594,HTTP Request - Create Authors,200,OK,Thread Group 1-15,text,true,,266,294,16,16,https://fakerestapi.azurewebsites.net/api/v1/Authors,593,0,447
+1658502274967,140,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-10,text,true,,269,183,17,17,https://fakerestapi.azurewebsites.net/api/v1/Authors/10,139,0,0
+1658502275014,156,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-9,text,true,,266,182,17,17,https://fakerestapi.azurewebsites.net/api/v1/Authors/9,156,0,0
+1658502273883,1344,HTTP Request - Create Authors,200,OK,Thread Group 1-12,text,true,,266,294,17,17,https://fakerestapi.azurewebsites.net/api/v1/Authors,1344,0,639
+1658502275172,139,HTTP Request - Get By BookId,200,OK,Thread Group 1-9,text,true,,497,196,18,18,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/9,138,0,0
+1658502273685,1628,HTTP Request - Create Authors,200,OK,Thread Group 1-11,text,true,,266,294,18,18,https://fakerestapi.azurewebsites.net/api/v1/Authors,1628,0,1486
+1658502272088,3272,HTTP Request - Create Authors,200,OK,Thread Group 1-3,text,true,,262,290,18,18,https://fakerestapi.azurewebsites.net/api/v1/Authors,3272,0,2693
+1658502275311,147,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-9,text,true,,266,182,18,18,https://fakerestapi.azurewebsites.net/api/v1/Authors/9,147,0,0
+1658502275107,639,HTTP Request - Get By BookId,200,OK,Thread Group 1-10,text,true,,501,197,19,19,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/10,638,0,0
+1658502275361,588,HTTP Request - Get all authors,200,OK,Thread Group 1-3,text,true,,47798,180,20,20,https://fakerestapi.azurewebsites.net/api/v1/Authors,141,0,0
+1658502275950,138,HTTP Request - Update Authors,200,OK,Thread Group 1-3,text,true,,273,303,21,21,https://fakerestapi.azurewebsites.net/api/v1/Authors/3,138,0,0
+1658502274657,1533,HTTP Request - Get all authors,200,OK,Thread Group 1-1,text,true,,49206,180,21,21,https://fakerestapi.azurewebsites.net/api/v1/Authors,147,0,0
+1658502274885,1305,HTTP Request - Create Authors,200,OK,Thread Group 1-17,text,true,,266,294,21,21,https://fakerestapi.azurewebsites.net/api/v1/Authors,1305,0,1165
+1658502276088,146,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-3,text,true,,266,182,21,21,https://fakerestapi.azurewebsites.net/api/v1/Authors/3,146,0,0
+1658502275684,557,HTTP Request - Create Authors,200,OK,Thread Group 1-21,text,true,,266,294,21,21,https://fakerestapi.azurewebsites.net/api/v1/Authors,557,0,423
+1658502274782,1494,HTTP Request - Get all authors,200,OK,Thread Group 1-13,text,true,,48578,180,21,21,https://fakerestapi.azurewebsites.net/api/v1/Authors,185,0,0
+1658502276191,141,HTTP Request - Update Authors,200,OK,Thread Group 1-1,text,true,,273,303,22,22,https://fakerestapi.azurewebsites.net/api/v1/Authors/1,136,0,0
+1658502275747,618,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-10,text,true,,269,183,22,22,https://fakerestapi.azurewebsites.net/api/v1/Authors/10,618,0,0
+1658502276235,134,HTTP Request - Get By BookId,200,OK,Thread Group 1-3,text,true,,412,196,21,21,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/3,134,0,0
+1658502275285,1108,HTTP Request - Create Authors,200,OK,Thread Group 1-19,text,true,,266,294,21,21,https://fakerestapi.azurewebsites.net/api/v1/Authors,1107,0,972
+1658502274683,1717,HTTP Request - Create Authors,200,OK,Thread Group 1-16,text,true,,266,294,21,21,https://fakerestapi.azurewebsites.net/api/v1/Authors,1717,0,1578
+1658502276276,132,HTTP Request - Update Authors,200,OK,Thread Group 1-13,text,true,,274,305,21,21,https://fakerestapi.azurewebsites.net/api/v1/Authors/13,132,0,0
+1658502273590,2868,HTTP Request - Get all authors,200,OK,Thread Group 1-6,text,true,,47236,180,21,21,https://fakerestapi.azurewebsites.net/api/v1/Authors,260,0,0
+1658502276333,139,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-1,text,true,,266,182,21,21,https://fakerestapi.azurewebsites.net/api/v1/Authors/1,138,0,0
+1658502275885,594,HTTP Request - Create Authors,200,OK,Thread Group 1-22,text,true,,266,294,21,21,https://fakerestapi.azurewebsites.net/api/v1/Authors,594,0,448
+1658502276369,135,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-3,text,true,,266,182,22,22,https://fakerestapi.azurewebsites.net/api/v1/Authors/3,135,0,0
+1658502276242,287,HTTP Request - Get all authors,200,OK,Thread Group 1-21,text,true,,48496,180,21,21,https://fakerestapi.azurewebsites.net/api/v1/Authors,137,0,0
+1658502276408,131,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-13,text,true,,269,183,21,21,https://fakerestapi.azurewebsites.net/api/v1/Authors/13,131,0,0
+1658502274938,1640,HTTP Request - Get all authors,200,OK,Thread Group 1-14,text,true,,46601,180,21,21,https://fakerestapi.azurewebsites.net/api/v1/Authors,160,0,0
+1658502276459,134,HTTP Request - Update Authors,200,OK,Thread Group 1-6,text,true,,273,303,21,21,https://fakerestapi.azurewebsites.net/api/v1/Authors/6,134,0,0
+1658502276472,135,HTTP Request - Get By BookId,200,OK,Thread Group 1-1,text,true,,412,196,21,21,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/1,135,0,0
+1658502275084,1530,HTTP Request - Create Authors,200,OK,Thread Group 1-18,text,true,,266,294,21,21,https://fakerestapi.azurewebsites.net/api/v1/Authors,1530,0,1395
+1658502276085,546,HTTP Request - Create Authors,200,OK,Thread Group 1-23,text,true,,266,294,21,21,https://fakerestapi.azurewebsites.net/api/v1/Authors,546,0,408
+1658502276530,136,HTTP Request - Update Authors,200,OK,Thread Group 1-21,text,true,,274,305,21,21,https://fakerestapi.azurewebsites.net/api/v1/Authors/21,136,0,0
+1658502276393,283,HTTP Request - Get all authors,200,OK,Thread Group 1-19,text,true,,46980,180,21,21,https://fakerestapi.azurewebsites.net/api/v1/Authors,138,0,0
+1658502276540,140,HTTP Request - Get By BookId,200,OK,Thread Group 1-13,text,true,,424,197,21,21,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/13,140,0,0
+1658502276578,135,HTTP Request - Update Authors,200,OK,Thread Group 1-14,text,true,,274,305,22,22,https://fakerestapi.azurewebsites.net/api/v1/Authors/14,134,0,0
+1658502274785,1939,HTTP Request - Get all authors,200,OK,Thread Group 1-2,text,true,,48265,180,22,22,https://fakerestapi.azurewebsites.net/api/v1/Authors,387,0,0
+1658502276593,136,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-6,text,true,,266,182,22,22,https://fakerestapi.azurewebsites.net/api/v1/Authors/6,136,0,0
+1658502276608,132,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-1,text,true,,266,182,22,22,https://fakerestapi.azurewebsites.net/api/v1/Authors/1,132,0,0
+1658502275228,1559,HTTP Request - Get all authors,200,OK,Thread Group 1-12,text,true,,48330,180,21,21,https://fakerestapi.azurewebsites.net/api/v1/Authors,163,0,0
+1658502276480,308,HTTP Request - Get all authors,200,OK,Thread Group 1-22,text,true,,46599,180,21,21,https://fakerestapi.azurewebsites.net/api/v1/Authors,144,0,0
+1658502276666,141,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-21,text,true,,269,183,21,21,https://fakerestapi.azurewebsites.net/api/v1/Authors/21,140,0,0
+1658502276677,135,HTTP Request - Update Authors,200,OK,Thread Group 1-19,text,true,,274,305,21,21,https://fakerestapi.azurewebsites.net/api/v1/Authors/19,135,0,0
+1658502276680,272,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-13,text,true,,269,183,22,22,https://fakerestapi.azurewebsites.net/api/v1/Authors/13,272,0,0
+1658502276724,228,HTTP Request - Update Authors,200,OK,Thread Group 1-2,text,true,,273,303,22,22,https://fakerestapi.azurewebsites.net/api/v1/Authors/2,228,0,0
+1658502276730,222,HTTP Request - Get By BookId,200,OK,Thread Group 1-6,text,true,,421,196,22,22,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/6,222,0,0
+1658502276713,240,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-14,text,true,,269,183,22,22,https://fakerestapi.azurewebsites.net/api/v1/Authors/14,240,0,0
+1658502276285,667,HTTP Request - Create Authors,200,OK,Thread Group 1-24,text,true,,266,294,22,22,https://fakerestapi.azurewebsites.net/api/v1/Authors,667,0,417
+1658502275484,1470,HTTP Request - Create Authors,200,OK,Thread Group 1-20,text,true,,266,294,21,21,https://fakerestapi.azurewebsites.net/api/v1/Authors,1470,0,1253
+1658502276812,143,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-19,text,true,,269,183,21,21,https://fakerestapi.azurewebsites.net/api/v1/Authors/19,143,0,0
+1658502276788,168,HTTP Request - Update Authors,200,OK,Thread Group 1-22,text,true,,274,305,21,21,https://fakerestapi.azurewebsites.net/api/v1/Authors/22,168,0,0
+1658502276788,168,HTTP Request - Update Authors,200,OK,Thread Group 1-12,text,true,,274,305,21,21,https://fakerestapi.azurewebsites.net/api/v1/Authors/12,168,0,0
+1658502276808,149,HTTP Request - Get By BookId,200,OK,Thread Group 1-21,text,true,,424,197,21,21,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/21,149,0,0
+1658502276632,329,HTTP Request - Get all authors,200,OK,Thread Group 1-23,text,true,,48684,180,21,21,https://fakerestapi.azurewebsites.net/api/v1/Authors,146,0,0
+1658502276191,919,HTTP Request - Get all authors,200,OK,Thread Group 1-17,text,true,,47561,180,22,22,https://fakerestapi.azurewebsites.net/api/v1/Authors,323,0,0
+1658502276953,175,HTTP Request - Get By BookId,200,OK,Thread Group 1-14,text,true,,424,197,22,22,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/14,175,0,0
+1658502276953,175,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-6,text,true,,266,182,22,22,https://fakerestapi.azurewebsites.net/api/v1/Authors/6,175,0,0
+1658502276957,183,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-21,text,true,,269,183,21,21,https://fakerestapi.azurewebsites.net/api/v1/Authors/21,183,0,0
+1658502276956,184,HTTP Request - Get By BookId,200,OK,Thread Group 1-19,text,true,,348,197,21,21,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/19,184,0,0
+1658502276953,187,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-2,text,true,,266,182,21,21,https://fakerestapi.azurewebsites.net/api/v1/Authors/2,187,0,0
+1658502276485,655,HTTP Request - Create Authors,200,OK,Thread Group 1-25,text,true,,266,294,21,21,https://fakerestapi.azurewebsites.net/api/v1/Authors,655,0,470
+1658502276956,187,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-22,text,true,,269,183,20,20,https://fakerestapi.azurewebsites.net/api/v1/Authors/22,187,0,0
+1658502276962,188,HTTP Request - Update Authors,200,OK,Thread Group 1-23,text,true,,274,305,20,20,https://fakerestapi.azurewebsites.net/api/v1/Authors/23,187,0,0
+1658502276956,195,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-12,text,true,,269,183,20,20,https://fakerestapi.azurewebsites.net/api/v1/Authors/12,195,0,0
+1658502277111,135,HTTP Request - Update Authors,200,OK,Thread Group 1-17,text,true,,274,305,20,20,https://fakerestapi.azurewebsites.net/api/v1/Authors/17,135,0,0
+1658502276401,845,HTTP Request - Get all authors,200,OK,Thread Group 1-16,text,true,,46742,180,20,20,https://fakerestapi.azurewebsites.net/api/v1/Authors,140,0,0
+1658502277129,138,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-14,text,true,,269,183,20,20,https://fakerestapi.azurewebsites.net/api/v1/Authors/14,138,0,0
+1658502276953,331,HTTP Request - Get all authors,200,OK,Thread Group 1-24,text,true,,48189,180,20,20,https://fakerestapi.azurewebsites.net/api/v1/Authors,177,0,0
+1658502277140,145,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-19,text,true,,269,183,20,20,https://fakerestapi.azurewebsites.net/api/v1/Authors/19,145,0,0
+1658502277140,145,HTTP Request - Get By BookId,200,OK,Thread Group 1-2,text,true,,485,196,20,20,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/2,145,0,0
+1658502275079,2207,HTTP Request - Get all authors,200,OK,Thread Group 1-15,text,true,,47476,180,20,20,https://fakerestapi.azurewebsites.net/api/v1/Authors,1283,0,0
+1658502277144,146,HTTP Request - Get By BookId,200,OK,Thread Group 1-22,text,true,,501,197,19,19,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/22,146,0,0
+1658502277151,142,HTTP Request - Get By BookId,200,OK,Thread Group 1-12,text,true,,424,197,19,19,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/12,142,0,0
+1658502277150,143,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-23,text,true,,269,183,19,19,https://fakerestapi.azurewebsites.net/api/v1/Authors/23,143,0,0
+1658502277246,137,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-17,text,true,,269,183,19,19,https://fakerestapi.azurewebsites.net/api/v1/Authors/17,137,0,0
+1658502277247,138,HTTP Request - Update Authors,200,OK,Thread Group 1-16,text,true,,274,305,19,19,https://fakerestapi.azurewebsites.net/api/v1/Authors/16,138,0,0
+1658502277284,149,HTTP Request - Update Authors,200,OK,Thread Group 1-24,text,true,,274,305,19,19,https://fakerestapi.azurewebsites.net/api/v1/Authors/24,149,0,0
+1658502277286,148,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-2,text,true,,266,182,19,19,https://fakerestapi.azurewebsites.net/api/v1/Authors/2,147,0,0
+1658502277293,143,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-12,text,true,,269,183,18,18,https://fakerestapi.azurewebsites.net/api/v1/Authors/12,143,0,0
+1658502277293,144,HTTP Request - Get By BookId,200,OK,Thread Group 1-23,text,true,,501,197,18,18,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/23,143,0,0
+1658502277286,152,HTTP Request - Update Authors,200,OK,Thread Group 1-15,text,true,,274,305,18,18,https://fakerestapi.azurewebsites.net/api/v1/Authors/15,150,0,0
+1658502277291,147,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-22,text,true,,269,183,18,18,https://fakerestapi.azurewebsites.net/api/v1/Authors/22,147,0,0
+1658502276884,566,HTTP Request - Create Authors,200,OK,Thread Group 1-27,text,true,,266,294,16,16,https://fakerestapi.azurewebsites.net/api/v1/Authors,566,0,431
+1658502275314,2185,HTTP Request - Get all authors,200,OK,Thread Group 1-11,text,true,,46488,180,17,17,https://fakerestapi.azurewebsites.net/api/v1/Authors,1392,0,0
+1658502276615,896,HTTP Request - Get all authors,200,OK,Thread Group 1-18,text,true,,47788,180,17,17,https://fakerestapi.azurewebsites.net/api/v1/Authors,340,0,0
+1658502277383,135,HTTP Request - Get By BookId,200,OK,Thread Group 1-17,text,true,,424,197,17,17,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/17,134,0,0
+1658502277385,142,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-16,text,true,,269,183,17,17,https://fakerestapi.azurewebsites.net/api/v1/Authors/16,142,0,0
+1658502277141,423,HTTP Request - Get all authors,200,OK,Thread Group 1-25,text,true,,46759,180,17,17,https://fakerestapi.azurewebsites.net/api/v1/Authors,147,0,0
+1658502277434,139,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-24,text,true,,269,183,17,17,https://fakerestapi.azurewebsites.net/api/v1/Authors/24,139,0,0
+1658502277438,140,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-23,text,true,,269,183,17,17,https://fakerestapi.azurewebsites.net/api/v1/Authors/23,140,0,0
+1658502277500,136,HTTP Request - Update Authors,200,OK,Thread Group 1-11,text,true,,274,305,16,16,https://fakerestapi.azurewebsites.net/api/v1/Authors/11,136,0,0
+1658502277512,132,HTTP Request - Update Authors,200,OK,Thread Group 1-18,text,true,,274,305,16,16,https://fakerestapi.azurewebsites.net/api/v1/Authors/18,132,0,0
+1658502277519,136,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-17,text,true,,269,183,16,16,https://fakerestapi.azurewebsites.net/api/v1/Authors/17,136,0,0
+1658502277086,574,HTTP Request - Create Authors,200,OK,Thread Group 1-28,text,true,,266,294,15,15,https://fakerestapi.azurewebsites.net/api/v1/Authors,574,0,435
+1658502277528,139,HTTP Request - Get By BookId,200,OK,Thread Group 1-16,text,true,,348,197,15,15,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/16,139,0,0
+1658502277565,135,HTTP Request - Update Authors,200,OK,Thread Group 1-25,text,true,,274,305,16,16,https://fakerestapi.azurewebsites.net/api/v1/Authors/25,135,0,0
+1658502277574,167,HTTP Request - Get By BookId,200,OK,Thread Group 1-24,text,true,,348,197,16,16,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/24,166,0,0
+1658502277451,297,HTTP Request - Get all authors,200,OK,Thread Group 1-27,text,true,,46051,180,16,16,https://fakerestapi.azurewebsites.net/api/v1/Authors,144,0,0
+1658502277636,141,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-11,text,true,,269,183,16,16,https://fakerestapi.azurewebsites.net/api/v1/Authors/11,141,0,0
+1658502277644,136,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-18,text,true,,269,183,16,16,https://fakerestapi.azurewebsites.net/api/v1/Authors/18,136,0,0
+1658502277667,140,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-16,text,true,,269,183,16,16,https://fakerestapi.azurewebsites.net/api/v1/Authors/16,140,0,0
+1658502276955,866,HTTP Request - Get all authors,200,OK,Thread Group 1-20,text,true,,46361,180,15,15,https://fakerestapi.azurewebsites.net/api/v1/Authors,186,0,0
+1658502277700,133,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-25,text,true,,270,183,15,15,https://fakerestapi.azurewebsites.net/api/v1/Authors/25,133,0,0
+1658502277741,143,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-24,text,true,,269,183,16,16,https://fakerestapi.azurewebsites.net/api/v1/Authors/24,143,0,0
+1658502277748,136,HTTP Request - Update Authors,200,OK,Thread Group 1-27,text,true,,274,305,16,16,https://fakerestapi.azurewebsites.net/api/v1/Authors/27,136,0,0
+1658502277284,600,HTTP Request - Create Authors,200,OK,Thread Group 1-29,text,true,,266,294,16,16,https://fakerestapi.azurewebsites.net/api/v1/Authors,600,0,460
+1658502277438,451,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-15,text,true,,269,183,15,15,https://fakerestapi.azurewebsites.net/api/v1/Authors/15,451,0,0
+1658502277781,134,HTTP Request - Get By BookId,200,OK,Thread Group 1-18,text,true,,501,197,15,15,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/18,134,0,0
+1658502277778,139,HTTP Request - Get By BookId,200,OK,Thread Group 1-11,text,true,,424,197,15,15,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/11,139,0,0
+1658502274765,3181,HTTP Request - Get all authors,200,OK,Thread Group 1-5,text,true,,48183,180,15,15,https://fakerestapi.azurewebsites.net/api/v1/Authors,167,0,0
+1658502277661,291,HTTP Request - Get all authors,200,OK,Thread Group 1-28,text,true,,47470,180,15,15,https://fakerestapi.azurewebsites.net/api/v1/Authors,143,0,0
+1658502277821,135,HTTP Request - Update Authors,200,OK,Thread Group 1-20,text,true,,274,305,15,15,https://fakerestapi.azurewebsites.net/api/v1/Authors/20,135,0,0
+1658502277833,138,HTTP Request - Get By BookId,200,OK,Thread Group 1-25,text,true,,501,197,15,15,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/25,138,0,0
+1658502277885,138,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-27,text,true,,269,183,15,15,https://fakerestapi.azurewebsites.net/api/v1/Authors/27,138,0,0
+1658502277889,148,HTTP Request - Get By BookId,200,OK,Thread Group 1-15,text,true,,501,197,15,15,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/15,147,0,0
+1658502277483,554,HTTP Request - Create Authors,200,OK,Thread Group 1-30,text,true,,266,294,15,15,https://fakerestapi.azurewebsites.net/api/v1/Authors,554,0,419
+1658502272884,5165,HTTP Request - Create Authors,200,OK,Thread Group 1-7,text,true,,262,290,15,15,https://fakerestapi.azurewebsites.net/api/v1/Authors,5165,0,5030
+1658502277918,138,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-11,text,true,,269,183,15,15,https://fakerestapi.azurewebsites.net/api/v1/Authors/11,137,0,0
+1658502277916,142,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-18,text,true,,269,183,14,14,https://fakerestapi.azurewebsites.net/api/v1/Authors/18,141,0,0
+1658502277946,139,HTTP Request - Update Authors,200,OK,Thread Group 1-5,text,true,,273,303,14,14,https://fakerestapi.azurewebsites.net/api/v1/Authors/5,139,0,0
+1658502277956,134,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-20,text,true,,269,183,14,14,https://fakerestapi.azurewebsites.net/api/v1/Authors/20,134,0,0
+1658502277953,137,HTTP Request - Update Authors,200,OK,Thread Group 1-28,text,true,,274,305,14,14,https://fakerestapi.azurewebsites.net/api/v1/Authors/28,137,0,0
+1658502277972,133,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-25,text,true,,269,183,14,14,https://fakerestapi.azurewebsites.net/api/v1/Authors/25,133,0,0
+1658502278024,132,HTTP Request - Get By BookId,200,OK,Thread Group 1-27,text,true,,348,197,13,13,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/27,132,0,0
+1658502278037,152,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-15,text,true,,269,183,13,13,https://fakerestapi.azurewebsites.net/api/v1/Authors/15,152,0,0
+1658502278086,140,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-5,text,true,,266,182,12,12,https://fakerestapi.azurewebsites.net/api/v1/Authors/5,140,0,0
+1658502278090,149,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-28,text,true,,269,183,12,12,https://fakerestapi.azurewebsites.net/api/v1/Authors/28,148,0,0
+1658502278090,149,HTTP Request - Get By BookId,200,OK,Thread Group 1-20,text,true,,424,197,12,12,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/20,149,0,0
+1658502273085,5156,HTTP Request - Create Authors,200,OK,Thread Group 1-8,text,true,,262,290,12,12,https://fakerestapi.azurewebsites.net/api/v1/Authors,5155,0,5021
+1658502277684,580,HTTP Request - Create Authors,200,OK,Thread Group 1-31,text,true,,266,294,12,12,https://fakerestapi.azurewebsites.net/api/v1/Authors,580,0,430
+1658502278157,136,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-27,text,true,,269,183,13,13,https://fakerestapi.azurewebsites.net/api/v1/Authors/27,135,0,0
+1658502277885,427,HTTP Request - Get all authors,200,OK,Thread Group 1-29,text,true,,47151,180,12,12,https://fakerestapi.azurewebsites.net/api/v1/Authors,144,0,0
+1658502278038,293,HTTP Request - Get all authors,200,OK,Thread Group 1-30,text,true,,47876,180,12,12,https://fakerestapi.azurewebsites.net/api/v1/Authors,142,0,0
+1658502278226,138,HTTP Request - Get By BookId,200,OK,Thread Group 1-5,text,true,,497,196,12,12,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/5,138,0,0
+1658502278240,133,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-20,text,true,,269,183,12,12,https://fakerestapi.azurewebsites.net/api/v1/Authors/20,133,0,0
+1658502278239,137,HTTP Request - Get By BookId,200,OK,Thread Group 1-28,text,true,,424,197,11,11,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/28,136,0,0
+1658502278313,136,HTTP Request - Update Authors,200,OK,Thread Group 1-29,text,true,,274,305,11,11,https://fakerestapi.azurewebsites.net/api/v1/Authors/29,136,0,0
+1658502277883,566,HTTP Request - Create Authors,200,OK,Thread Group 1-32,text,true,,266,294,11,11,https://fakerestapi.azurewebsites.net/api/v1/Authors,566,0,426
+1658502278332,133,HTTP Request - Update Authors,200,OK,Thread Group 1-30,text,true,,274,305,11,11,https://fakerestapi.azurewebsites.net/api/v1/Authors/30,133,0,0
+1658502278365,136,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-5,text,true,,266,182,12,12,https://fakerestapi.azurewebsites.net/api/v1/Authors/5,136,0,0
+1658502278376,132,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-28,text,true,,269,183,11,11,https://fakerestapi.azurewebsites.net/api/v1/Authors/28,131,0,0
+1658502278265,300,HTTP Request - Get all authors,200,OK,Thread Group 1-31,text,true,,46824,180,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors,146,0,0
+1658502278450,139,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-29,text,true,,270,183,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors/29,139,0,0
+1658502278466,138,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-30,text,true,,269,183,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors/30,138,0,0
+1658502278084,566,HTTP Request - Create Authors,200,OK,Thread Group 1-33,text,true,,266,294,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors,566,0,429
+1658502278566,140,HTTP Request - Update Authors,200,OK,Thread Group 1-31,text,true,,274,305,11,11,https://fakerestapi.azurewebsites.net/api/v1/Authors/31,140,0,0
+1658502278589,139,HTTP Request - Get By BookId,200,OK,Thread Group 1-29,text,true,,501,197,11,11,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/29,139,0,0
+1658502278604,153,HTTP Request - Get By BookId,200,OK,Thread Group 1-30,text,true,,424,197,11,11,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/30,153,0,0
+1658502278450,315,HTTP Request - Get all authors,200,OK,Thread Group 1-32,text,true,,47312,180,11,11,https://fakerestapi.azurewebsites.net/api/v1/Authors,165,0,0
+1658502278283,564,HTTP Request - Create Authors,200,OK,Thread Group 1-34,text,true,,266,294,11,11,https://fakerestapi.azurewebsites.net/api/v1/Authors,564,0,426
+1658502278706,143,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-31,text,true,,270,183,11,11,https://fakerestapi.azurewebsites.net/api/v1/Authors/31,143,0,0
+1658502278728,139,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-29,text,true,,269,183,11,11,https://fakerestapi.azurewebsites.net/api/v1/Authors/29,139,0,0
+1658502278758,144,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-30,text,true,,270,183,11,11,https://fakerestapi.azurewebsites.net/api/v1/Authors/30,144,0,0
+1658502278766,141,HTTP Request - Update Authors,200,OK,Thread Group 1-32,text,true,,274,305,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors/32,141,0,0
+1658502278651,285,HTTP Request - Get all authors,200,OK,Thread Group 1-33,text,true,,47725,180,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors,138,0,0
+1658502278850,144,HTTP Request - Get By BookId,200,OK,Thread Group 1-31,text,true,,501,197,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/31,144,0,0
+1658502278050,946,HTTP Request - Get all authors,200,OK,Thread Group 1-7,text,true,,46605,180,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors,276,0,0
+1658502278484,561,HTTP Request - Create Authors,200,OK,Thread Group 1-35,text,true,,266,294,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors,561,0,423
+1658502278907,141,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-32,text,true,,270,183,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors/32,141,0,0
+1658502278936,137,HTTP Request - Update Authors,200,OK,Thread Group 1-33,text,true,,274,305,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors/33,136,0,0
+1658502278995,138,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-31,text,true,,270,183,11,11,https://fakerestapi.azurewebsites.net/api/v1/Authors/31,138,0,0
+1658502278996,138,HTTP Request - Update Authors,200,OK,Thread Group 1-7,text,true,,273,303,11,11,https://fakerestapi.azurewebsites.net/api/v1/Authors/7,137,0,0
+1658502278848,290,HTTP Request - Get all authors,200,OK,Thread Group 1-34,text,true,,48673,180,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors,139,0,0
+1658502278241,942,HTTP Request - Get all authors,200,OK,Thread Group 1-8,text,true,,47548,180,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors,140,0,0
+1658502279048,140,HTTP Request - Get By BookId,200,OK,Thread Group 1-32,text,true,,424,197,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/32,140,0,0
+1658502279074,136,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-33,text,true,,270,183,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors/33,136,0,0
+1658502278684,561,HTTP Request - Create Authors,200,OK,Thread Group 1-36,text,true,,266,294,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors,561,0,425
+1658502279134,138,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-7,text,true,,266,182,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors/7,138,0,0
+1658502279138,134,HTTP Request - Update Authors,200,OK,Thread Group 1-34,text,true,,274,305,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors/34,134,0,0
+1658502279183,139,HTTP Request - Update Authors,200,OK,Thread Group 1-8,text,true,,273,303,11,11,https://fakerestapi.azurewebsites.net/api/v1/Authors/8,139,0,0
+1658502279188,150,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-32,text,true,,270,183,11,11,https://fakerestapi.azurewebsites.net/api/v1/Authors/32,150,0,0
+1658502279045,301,HTTP Request - Get all authors,200,OK,Thread Group 1-35,text,true,,47795,180,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors,143,0,0
+1658502279211,136,HTTP Request - Get By BookId,200,OK,Thread Group 1-33,text,true,,433,197,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/33,136,0,0
+1658502279273,137,HTTP Request - Get By BookId,200,OK,Thread Group 1-7,text,true,,346,196,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/7,137,0,0
+1658502279273,139,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-34,text,true,,270,183,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors/34,138,0,0
+1658502279322,145,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-8,text,true,,266,182,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors/8,145,0,0
+1658502278883,584,HTTP Request - Create Authors,200,OK,Thread Group 1-37,text,true,,266,294,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors,584,0,436
+1658502279346,145,HTTP Request - Update Authors,200,OK,Thread Group 1-35,text,true,,274,305,11,11,https://fakerestapi.azurewebsites.net/api/v1/Authors/35,145,0,0
+1658502279348,143,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-33,text,true,,270,183,11,11,https://fakerestapi.azurewebsites.net/api/v1/Authors/33,143,0,0
+1658502276685,2815,HTTP Request - Create Authors,200,OK,Thread Group 1-26,text,true,,266,294,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors,2815,0,2652
+1658502279246,289,HTTP Request - Get all authors,200,OK,Thread Group 1-36,text,true,,48254,180,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors,141,0,0
+1658502279410,139,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-7,text,true,,266,182,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors/7,139,0,0
+1658502279412,138,HTTP Request - Get By BookId,200,OK,Thread Group 1-34,text,true,,424,197,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/34,138,0,0
+1658502279468,143,HTTP Request - Get By BookId,200,OK,Thread Group 1-8,text,true,,346,196,9,9,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/8,143,0,0
+1658502279083,568,HTTP Request - Create Authors,200,OK,Thread Group 1-38,text,true,,266,294,9,9,https://fakerestapi.azurewebsites.net/api/v1/Authors,568,0,423
+1658502279492,186,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-35,text,true,,270,183,9,9,https://fakerestapi.azurewebsites.net/api/v1/Authors/35,186,0,0
+1658502279535,147,HTTP Request - Update Authors,200,OK,Thread Group 1-36,text,true,,274,305,9,9,https://fakerestapi.azurewebsites.net/api/v1/Authors/36,147,0,0
+1658502279550,145,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-34,text,true,,270,183,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors/34,145,0,0
+1658502279611,145,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-8,text,true,,266,182,9,9,https://fakerestapi.azurewebsites.net/api/v1/Authors/8,145,0,0
+1658502279469,329,HTTP Request - Get all authors,200,OK,Thread Group 1-37,text,true,,46894,180,8,8,https://fakerestapi.azurewebsites.net/api/v1/Authors,162,0,0
+1658502279682,142,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-36,text,true,,270,183,8,8,https://fakerestapi.azurewebsites.net/api/v1/Authors/36,141,0,0
+1658502279679,145,HTTP Request - Get By BookId,200,OK,Thread Group 1-35,text,true,,433,197,8,8,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/35,144,0,0
+1658502279284,572,HTTP Request - Create Authors,200,OK,Thread Group 1-39,text,true,,266,294,8,8,https://fakerestapi.azurewebsites.net/api/v1/Authors,572,0,434
+1658502279798,150,HTTP Request - Update Authors,200,OK,Thread Group 1-37,text,true,,274,305,9,9,https://fakerestapi.azurewebsites.net/api/v1/Authors/37,150,0,0
+1658502279652,300,HTTP Request - Get all authors,200,OK,Thread Group 1-38,text,true,,48109,180,9,9,https://fakerestapi.azurewebsites.net/api/v1/Authors,143,0,0
+1658502279824,136,HTTP Request - Get By BookId,200,OK,Thread Group 1-36,text,true,,513,197,9,9,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/36,136,0,0
+1658502279500,462,HTTP Request - Get all authors,200,OK,Thread Group 1-26,text,true,,47551,180,9,9,https://fakerestapi.azurewebsites.net/api/v1/Authors,181,0,0
+1658502279824,139,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-35,text,true,,270,183,9,9,https://fakerestapi.azurewebsites.net/api/v1/Authors/35,139,0,0
+1658502279484,571,HTTP Request - Create Authors,200,OK,Thread Group 1-40,text,true,,266,294,8,8,https://fakerestapi.azurewebsites.net/api/v1/Authors,571,0,434
+1658502279953,137,HTTP Request - Update Authors,200,OK,Thread Group 1-38,text,true,,274,305,9,9,https://fakerestapi.azurewebsites.net/api/v1/Authors/38,136,0,0
+1658502279949,142,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-37,text,true,,270,183,9,9,https://fakerestapi.azurewebsites.net/api/v1/Authors/37,142,0,0
+1658502279961,138,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-36,text,true,,270,183,9,9,https://fakerestapi.azurewebsites.net/api/v1/Authors/36,138,0,0
+1658502279962,137,HTTP Request - Update Authors,200,OK,Thread Group 1-26,text,true,,274,305,9,9,https://fakerestapi.azurewebsites.net/api/v1/Authors/26,137,0,0
+1658502280092,141,HTTP Request - Get By BookId,200,OK,Thread Group 1-37,text,true,,354,197,8,8,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/37,141,0,0
+1658502280090,146,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-38,text,true,,270,183,8,8,https://fakerestapi.azurewebsites.net/api/v1/Authors/38,143,0,0
+1658502280100,136,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-26,text,true,,269,183,8,8,https://fakerestapi.azurewebsites.net/api/v1/Authors/26,136,0,0
+1658502279684,570,HTTP Request - Create Authors,200,OK,Thread Group 1-41,text,true,,266,294,8,8,https://fakerestapi.azurewebsites.net/api/v1/Authors,570,0,429
+1658502280233,138,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-37,text,true,,270,183,9,9,https://fakerestapi.azurewebsites.net/api/v1/Authors/37,138,0,0
+1658502280237,152,HTTP Request - Get By BookId,200,OK,Thread Group 1-38,text,true,,513,197,8,8,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/38,152,0,0
+1658502280237,152,HTTP Request - Get By BookId,200,OK,Thread Group 1-26,text,true,,348,197,8,8,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/26,138,0,0
+1658502280390,139,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-26,text,true,,269,183,9,9,https://fakerestapi.azurewebsites.net/api/v1/Authors/26,139,0,0
+1658502280390,139,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-38,text,true,,270,183,9,9,https://fakerestapi.azurewebsites.net/api/v1/Authors/38,139,0,0
+1658502280056,570,HTTP Request - Get all authors,200,OK,Thread Group 1-40,text,true,,47470,180,7,7,https://fakerestapi.azurewebsites.net/api/v1/Authors,152,0,0
+1658502280086,573,HTTP Request - Create Authors,200,OK,Thread Group 1-43,text,true,,266,294,7,7,https://fakerestapi.azurewebsites.net/api/v1/Authors,573,0,436
+1658502280256,439,HTTP Request - Get all authors,200,OK,Thread Group 1-41,text,true,,49529,180,8,8,https://fakerestapi.azurewebsites.net/api/v1/Authors,138,0,0
+1658502280626,146,HTTP Request - Update Authors,200,OK,Thread Group 1-40,text,true,,274,305,8,8,https://fakerestapi.azurewebsites.net/api/v1/Authors/40,146,0,0
+1658502280284,560,HTTP Request - Create Authors,200,OK,Thread Group 1-44,text,true,,266,294,8,8,https://fakerestapi.azurewebsites.net/api/v1/Authors,560,0,427
+1658502280773,139,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-40,text,true,,270,183,9,9,https://fakerestapi.azurewebsites.net/api/v1/Authors/40,139,0,0
+1658502280660,290,HTTP Request - Get all authors,200,OK,Thread Group 1-43,text,true,,47167,180,9,9,https://fakerestapi.azurewebsites.net/api/v1/Authors,139,0,0
+1658502280912,136,HTTP Request - Get By BookId,200,OK,Thread Group 1-40,text,true,,513,197,9,9,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/40,135,0,0
+1658502280951,136,HTTP Request - Update Authors,200,OK,Thread Group 1-43,text,true,,274,305,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors/43,136,0,0
+1658502279858,1288,HTTP Request - Get all authors,200,OK,Thread Group 1-39,text,true,,46442,180,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors,137,0,0
+1658502280696,459,HTTP Request - Update Authors,200,OK,Thread Group 1-41,text,true,,274,305,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors/41,459,0,0
+1658502281048,142,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-40,text,true,,270,183,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors/40,142,0,0
+1658502281088,134,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-43,text,true,,270,183,9,9,https://fakerestapi.azurewebsites.net/api/v1/Authors/43,133,0,0
+1658502280694,635,HTTP Request - Create Authors,200,OK,Thread Group 1-46,text,true,,266,294,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors,635,0,425
+1658502281147,189,HTTP Request - Update Authors,200,OK,Thread Group 1-39,text,true,,274,305,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors/39,189,0,0
+1658502281156,181,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-41,text,true,,270,183,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors/41,180,0,0
+1658502280845,496,HTTP Request - Get all authors,200,OK,Thread Group 1-44,text,true,,47881,180,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors,142,0,0
+1658502281223,137,HTTP Request - Get By BookId,200,OK,Thread Group 1-43,text,true,,513,197,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/43,136,0,0
+1658502281337,146,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-39,text,true,,270,183,11,11,https://fakerestapi.azurewebsites.net/api/v1/Authors/39,145,0,0
+1658502280884,599,HTTP Request - Create Authors,200,OK,Thread Group 1-47,text,true,,266,294,11,11,https://fakerestapi.azurewebsites.net/api/v1/Authors,599,0,453
+1658502281337,152,HTTP Request - Get By BookId,200,OK,Thread Group 1-41,text,true,,433,197,11,11,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/41,152,0,0
+1658502281342,152,HTTP Request - Update Authors,200,OK,Thread Group 1-44,text,true,,274,305,11,11,https://fakerestapi.azurewebsites.net/api/v1/Authors/44,151,0,0
+1658502281360,134,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-43,text,true,,270,183,11,11,https://fakerestapi.azurewebsites.net/api/v1/Authors/43,134,0,0
+1658502281330,300,HTTP Request - Get all authors,200,OK,Thread Group 1-46,text,true,,48863,180,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors,144,0,0
+1658502281484,150,HTTP Request - Get By BookId,200,OK,Thread Group 1-39,text,true,,433,197,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/39,150,0,0
+1658502281490,145,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-41,text,true,,270,183,10,10,https://fakerestapi.azurewebsites.net/api/v1/Authors/41,144,0,0
+1658502281494,142,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-44,text,true,,270,183,9,9,https://fakerestapi.azurewebsites.net/api/v1/Authors/44,142,0,0
+1658502281083,574,HTTP Request - Create Authors,200,OK,Thread Group 1-48,text,true,,266,294,9,9,https://fakerestapi.azurewebsites.net/api/v1/Authors,574,0,438
+1658502281635,144,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-39,text,true,,270,183,9,9,https://fakerestapi.azurewebsites.net/api/v1/Authors/39,144,0,0
+1658502281637,142,HTTP Request - Get By BookId,200,OK,Thread Group 1-44,text,true,,433,197,9,9,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/44,142,0,0
+1658502281484,300,HTTP Request - Get all authors,200,OK,Thread Group 1-47,text,true,,47796,180,8,8,https://fakerestapi.azurewebsites.net/api/v1/Authors,150,0,0
+1658502281631,155,HTTP Request - Update Authors,200,OK,Thread Group 1-46,text,true,,274,305,8,8,https://fakerestapi.azurewebsites.net/api/v1/Authors/46,155,0,0
+1658502281283,572,HTTP Request - Create Authors,200,OK,Thread Group 1-49,text,true,,266,294,8,8,https://fakerestapi.azurewebsites.net/api/v1/Authors,572,0,427
+1658502281780,137,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-44,text,true,,270,183,8,8,https://fakerestapi.azurewebsites.net/api/v1/Authors/44,137,0,0
+1658502281784,137,HTTP Request - Update Authors,200,OK,Thread Group 1-47,text,true,,274,305,7,7,https://fakerestapi.azurewebsites.net/api/v1/Authors/47,137,0,0
+1658502281786,138,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-46,text,true,,270,183,7,7,https://fakerestapi.azurewebsites.net/api/v1/Authors/46,137,0,0
+1658502281658,285,HTTP Request - Get all authors,200,OK,Thread Group 1-48,text,true,,48984,180,7,7,https://fakerestapi.azurewebsites.net/api/v1/Authors,138,0,0
+1658502281921,137,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-47,text,true,,270,183,7,7,https://fakerestapi.azurewebsites.net/api/v1/Authors/47,136,0,0
+1658502281925,140,HTTP Request - Get By BookId,200,OK,Thread Group 1-46,text,true,,513,197,7,7,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/46,140,0,0
+1658502281944,137,HTTP Request - Update Authors,200,OK,Thread Group 1-48,text,true,,274,305,7,7,https://fakerestapi.azurewebsites.net/api/v1/Authors/48,137,0,0
+1658502281856,282,HTTP Request - Get all authors,200,OK,Thread Group 1-49,text,true,,48439,180,7,7,https://fakerestapi.azurewebsites.net/api/v1/Authors,141,0,0
+1658502282058,136,HTTP Request - Get By BookId,200,OK,Thread Group 1-47,text,true,,513,197,7,7,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/47,136,0,0
+1658502282066,138,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-46,text,true,,270,183,7,7,https://fakerestapi.azurewebsites.net/api/v1/Authors/46,137,0,0
+1658502282082,136,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-48,text,true,,270,183,6,6,https://fakerestapi.azurewebsites.net/api/v1/Authors/48,135,0,0
+1658502282138,135,HTTP Request - Update Authors,200,OK,Thread Group 1-49,text,true,,274,305,6,6,https://fakerestapi.azurewebsites.net/api/v1/Authors/49,135,0,0
+1658502282194,135,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-47,text,true,,270,183,6,6,https://fakerestapi.azurewebsites.net/api/v1/Authors/47,134,0,0
+1658502282218,136,HTTP Request - Get By BookId,200,OK,Thread Group 1-48,text,true,,513,197,5,5,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/48,135,0,0
+1658502282273,137,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-49,text,true,,270,183,5,5,https://fakerestapi.azurewebsites.net/api/v1/Authors/49,137,0,0
+1658502282354,136,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-48,text,true,,270,183,5,5,https://fakerestapi.azurewebsites.net/api/v1/Authors/48,136,0,0
+1658502282410,136,HTTP Request - Get By BookId,200,OK,Thread Group 1-49,text,true,,513,197,4,4,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/49,136,0,0
+1658502279884,2782,HTTP Request - Create Authors,200,OK,Thread Group 1-42,text,true,,266,294,4,4,https://fakerestapi.azurewebsites.net/api/v1/Authors,2781,0,2646
+1658502282547,135,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-49,text,true,,270,183,4,4,https://fakerestapi.azurewebsites.net/api/v1/Authors/49,135,0,0
+1658502282666,596,HTTP Request - Get all authors,200,OK,Thread Group 1-42,text,true,,49610,180,3,3,https://fakerestapi.azurewebsites.net/api/v1/Authors,322,0,0
+1658502283263,205,HTTP Request - Update Authors,200,OK,Thread Group 1-42,text,true,,274,305,3,3,https://fakerestapi.azurewebsites.net/api/v1/Authors/42,205,0,0
+1658502280483,2985,HTTP Request - Create Authors,200,OK,Thread Group 1-45,text,true,,266,294,3,3,https://fakerestapi.azurewebsites.net/api/v1/Authors,2985,0,2804
+1658502283468,165,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-42,text,true,,270,183,3,3,https://fakerestapi.azurewebsites.net/api/v1/Authors/42,165,0,0
+1658502283634,255,HTTP Request - Get By BookId,200,OK,Thread Group 1-42,text,true,,433,197,3,3,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/42,254,0,0
+1658502283889,142,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-42,text,true,,270,183,3,3,https://fakerestapi.azurewebsites.net/api/v1/Authors/42,141,0,0
+1658502283469,566,HTTP Request - Get all authors,200,OK,Thread Group 1-45,text,true,,47725,180,2,2,https://fakerestapi.azurewebsites.net/api/v1/Authors,164,0,0
+1658502284036,203,HTTP Request - Update Authors,200,OK,Thread Group 1-45,text,true,,274,305,2,2,https://fakerestapi.azurewebsites.net/api/v1/Authors/45,202,0,0
+1658502284239,141,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-45,text,true,,270,183,2,2,https://fakerestapi.azurewebsites.net/api/v1/Authors/45,141,0,0
+1658502281485,2895,HTTP Request - Create Authors,200,OK,Thread Group 1-50,text,true,,266,294,2,2,https://fakerestapi.azurewebsites.net/api/v1/Authors,2895,0,2754
+1658502284381,269,HTTP Request - Get By BookId,200,OK,Thread Group 1-45,text,true,,433,197,2,2,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/45,268,0,0
+1658502284650,230,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-45,text,true,,270,183,2,2,https://fakerestapi.azurewebsites.net/api/v1/Authors/45,230,0,0
+1658502284381,636,HTTP Request - Get all authors,200,OK,Thread Group 1-50,text,true,,46684,180,1,1,https://fakerestapi.azurewebsites.net/api/v1/Authors,265,0,0
+1658502285018,177,HTTP Request - Update Authors,200,OK,Thread Group 1-50,text,true,,274,305,1,1,https://fakerestapi.azurewebsites.net/api/v1/Authors/50,177,0,0
+1658502285196,262,HTTP Request - Get By AuthorId,200,OK,Thread Group 1-50,text,true,,270,183,1,1,https://fakerestapi.azurewebsites.net/api/v1/Authors/50,262,0,0
+1658502285459,233,HTTP Request - Get By BookId,200,OK,Thread Group 1-50,text,true,,513,197,1,1,https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/50,233,0,0
+1658502285692,330,HTTP Request - Delete By AuthorId,200,OK,Thread Group 1-50,text,true,,270,183,1,1,https://fakerestapi.azurewebsites.net/api/v1/Authors/50,330,0,0
