@@ -79,6 +79,7 @@
 
 	<build>
 		<testSourceDirectory>${project.basedir}/src/main/java</testSourceDirectory>
+
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
