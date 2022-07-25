@@ -12,9 +12,9 @@ Hence, all tests are put in src/main as same codebase may be utilised for SLI pr
 # Considerations
 1. Pet Id is changing after update. Test is written considering this is acceptable product behaviour
 2. There is little deviation from standard Http status code practices. As of now test are not made to fail/follow strict http status code patterns for this as this is more of architectural decision. Test may be changed after a round of discussion.
-3. Applications request response data types are not consistent, it are handled in test framework but can be done in more elegant manner
-4. Response array has mix of long and integer, it are handled in test framework but can be done in more elegant manner.
-5. createWithArray endpoint is having lot of latency but as of now, response time assertions havent been put but can be considered in future after discussion.	
+3. Applications request response data types are not consistent, it is handled in test framework but can be done in more elegant manner
+4. Response array has mix of long and integer, it is handled in test framework but can be done in more elegant manner.
+5. createWithArray endpoint is having lot of latency but as of now, response time assertions haven't been put but can be considered in future after discussion.	
   
 
 # Known Improvement Avenues
