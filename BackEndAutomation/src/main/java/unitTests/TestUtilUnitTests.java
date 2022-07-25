@@ -18,8 +18,7 @@ public class TestUtilUnitTests {
 		
 		List<String> expectedResponse =  new ArrayList<String>();
 		expectedResponse.add("Trials3");
-		expectedResponse.add("Trials5");
-		
+		expectedResponse.add("Trials5");	
 		List<String> actualRespone = testUtil.getValuesForGivenKey(file.read("/inputPayloads/creatMultipleUsersPayload.json"), "username");
 		
 		assertEquals(actualRespone, expectedResponse);
