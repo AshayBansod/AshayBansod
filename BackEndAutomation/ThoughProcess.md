@@ -18,10 +18,10 @@ Hence, all tests are put in src/main as same codebase may be utilised for SLI pr
   
 
 # Known Improvement Avenues
-1. Lot of boiler plate code can be removed with lombok and/or builder
-2. Maven profile can be used as run configuration controller
-2. Response message assertion can be improved
-3. Unit test coverage needs to be improved and UT can be moved under src/test
+1. Lot of boiler plate code can be removed with lombok and/or builder.
+2. Maven profile can be used as run configuration controller.
+2. Response message assertion can be improved.
+3. Unit test coverage needs to be improved and UT can be moved under src/test.
 4. model package can be made more cleaner and segregated into separate request and response POJOs rather than all in one folder. 
 5. After hooks could be moved to suitable packages but issues were faced during dependency injection. 
 6. readme file needs to be created to mention - 'how to' for setup, run etc.
